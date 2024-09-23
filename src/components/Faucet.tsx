@@ -9,7 +9,7 @@ const Faucet: React.FC = () => {
   const [message, setMessage] = useState<string>('')
 
   // Simulate the contract call
-  const { data: simulationData, isLoading: isSimulating } = useSimulateContract({
+  const {  isFetching: isSimulating } = useSimulateContract({
     address: faucet.address,
     abi: faucet.abi,
     functionName: 'claim',
@@ -22,7 +22,7 @@ const Faucet: React.FC = () => {
   const handleClaim = () => {
     setLoading(true)
     setMessage('')
-    claimWrite?.({
+    claimWrite({
       address: faucet.address,
       abi: faucet.abi,
       functionName: 'claim',
@@ -33,11 +33,14 @@ const Faucet: React.FC = () => {
         setLoading(false)
       },
       onError(error: any) {
-        setMessage(error)
+        console.log(error)
+        setMessage(error.message)
         setLoading(false)
       },
     })
   }
+
+  
 
   return (
     <div className="mt-8 bg-white shadow-lg rounded-lg p-6">
@@ -47,10 +50,10 @@ const Faucet: React.FC = () => {
         disabled={!isConnected || loading || isSimulating}
         className={`px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 disabled:opacity-50`}
       >
-        {loading || isSimulating ? 'Claiming...' : 'Claim 1000 IT'}
+        {loading  ? 'Claiming...' : 'Claim 1000 IT'}
       </button>
       {message && <p className="mt-2 text-green-600">{message}</p>}
-      {(isWriting || isSimulating) && <p className="mt-2">Processing...</p>}
+      {(isWriting ) && <p className="mt-2">Processing...</p>}
     </div>
   )
 }
