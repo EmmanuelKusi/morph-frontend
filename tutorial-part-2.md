@@ -394,4 +394,6 @@ By following these updated tutorials, you've successfully set up a React fronten
 
 If you encounter any further issues or have additional questions, feel free to ask!
 
+Visit attached repo link for more details: https://github.com/EmmanuelKusi/morph-frontend
+
 **Happy Coding! 🚀**

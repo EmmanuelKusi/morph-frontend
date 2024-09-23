@@ -513,4 +513,6 @@ Congratulations! You've successfully set up a React frontend application using V
 
 In the next part of this tutorial series, we'll delve into implementing smart contract interactions within your React frontend using the updated **Wagmi v2** API.
 
-Happy coding!
+Visit attached repo link for more details: https://github.com/EmmanuelKusi/morph-frontend
+
+**Happy Coding! 🚀**
