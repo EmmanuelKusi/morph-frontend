@@ -3,7 +3,7 @@
 
 ### **Overview**
 
-Welcome to the second part of our Morph L2 development series! In "Deploying Smart Contracts on Morph L2 with Hardhat and TypeScript", you learned how to set up and deploy your iToken and iTokenFaucet smart contracts using Hardhat. Now, it's time to bring those contracts to life with a user-friendly frontend application.
+In "[How To Build a DApp on Morph: A Comprehensive Guide](https://medium.com/@kusiemmanuelgreat/how-to-build-a-dapp-on-morph-a-comprehensive-guide-1e0000ac2924)", you learned how to set up and deploy your iToken and iTokenFaucet smart contracts using Hardhat. Now, it's time to bring those contracts to life with a user-friendly frontend application.
 
 In this tutorial, we'll guide you through setting up a React application integrated with **Wagmi v2** and **RainbowKit** to interact with your deployed contracts on the Morph Holesky network. You'll learn how to connect wallets, display token balances, and enable users to claim tokens from the faucet.
 
