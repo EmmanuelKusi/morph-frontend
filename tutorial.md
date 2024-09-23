@@ -1,4 +1,4 @@
-# Comprehensive Tutorial: Creating a Frontend to Interact with iToken and iTokenFaucet on Morph
+# Comprehensive Tutorial: Creating a Frontend to Interact with smart contracts on Morph
 
 ## Overview
 
